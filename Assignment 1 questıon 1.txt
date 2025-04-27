@@ -1,0 +1,28 @@
+// Assignment 1 question 1 //
+
+#include<stdio.h>
+#define pi 3.14
+
+int main () {
+float radius ;
+float height ;
+
+printf("please enter the value of radius: ");
+scanf("%f", &radius);
+printf("please enter the value of height: ");
+scanf("%f", &height);
+
+// Volume and surface area calculation
+
+float volume ;
+volume= pi * radius * radius * height ;
+float surface_area ;
+surface_area = 2 * pi * radius * height + 2 * pi * radius * radius ;
+
+// Printing results
+
+printf("The value of volume is : %.2f\n" , volume );
+printf("The value of surface area is : %.2f", surface_area);
+
+return 0 ;
+}

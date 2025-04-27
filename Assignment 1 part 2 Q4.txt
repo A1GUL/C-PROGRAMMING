@@ -1,0 +1,26 @@
+// Assignment 1 part 2 Q4
+#include <stdio.h>
+
+int main() {
+    
+    //obtaining data of grades
+    float midterm,final,lab,total;
+    printf("Enter your midterm grade: ");
+    scanf("%f",&midterm);
+    printf("Enter your final grade: ");
+    scanf("%f",&final);
+    printf("Enter your lab grade: ");
+    scanf("%f",&lab);
+    
+    //calculating total grade
+    total= midterm*0.4+final*0.5+lab*0.1;
+    
+    //prompt that pass or fail
+    if (total>=60)
+      printf("Total grade: %.2f \nCongratulations ,you passed! ",total);
+    else
+      printf("Total grade: %.2f \nYou lost,you must study more!",total);
+      
+
+    return 0;
+}

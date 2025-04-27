@@ -1,0 +1,34 @@
+// Assignment 1 Question 2 //
+
+#include<stdio.h>
+#include<math.h>
+
+
+int main() {
+
+// Variable declarations
+
+    double x1,y1,x2,y2,distance ;
+
+// Prompt the user to enter the inputs
+
+    printf("please enter the value of x1 and y1: ");
+    scanf("%lf %lf" ,&x1,&y1);
+    
+    printf("please enter the value of x2 and y2: ");
+    scanf("%lf %lf", &x2,&y2);
+
+// Perform the required operation(s)
+    
+    distance= sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+// b) Distance with three decimal places
+
+    printf("The distance of the two points is %.3lf\n", distance);
+
+// c) Distance with ten spaces and two decimal places
+
+    printf("The distance of the two points is %10.2lf\n", distance);
+    
+    return 0 ;
+}

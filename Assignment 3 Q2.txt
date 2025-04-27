@@ -1,0 +1,57 @@
+//Assignment 3 Q2
+/* (a) 
+#include <stdio.h>
+
+int main() {
+    int N, i, sum = 0;
+
+    printf("Enter an integer N: ");
+    scanf("%d", &N);
+
+ 
+    for (i = 1; i <= N; i++) {
+        sum += i * i;  
+    }
+
+    printf("The sum is: %d\n", sum);
+    return 0;
+}
+*/
+
+ /* (b)
+#include <stdio.h>
+
+int main() {
+    int N, i=1, sum = 0;
+
+    printf("Enter an integer N: ");
+    scanf("%d", &N);
+
+   while(i<=N){
+       sum += i*i ;
+       i++;
+   }
+
+    printf("The sum is: %d\n", sum);
+    return 0;
+}
+
+*/  // (c) 
+
+#include <stdio.h>
+
+int main() {
+    int N, i = 1, sum = 0;
+
+    printf("Enter an integer N: ");
+    scanf("%d", &N);
+
+    // Do-while döngüsü ile toplamı hesapla
+    do {
+        sum += i * i;  // i'nin karesi
+        i++;  // i'yi bir artır
+    } while (i <= N);  // Koşul
+
+    printf("The sum is: %d\n", sum);
+    return 0;
+}

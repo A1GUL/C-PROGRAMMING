@@ -1,0 +1,26 @@
+// Assignment 1 part 2 Q3 //
+
+#include <stdio.h>
+#define pi 3.14
+
+int main() {
+    double r, area_circle,area_square,red_area,yellow_area;
+    
+    //prompt the radius
+    printf("enter the radius of the circle: ");
+    scanf("%lf",&r);
+    
+    //calculate areas
+    area_circle= pi*r*r;
+    area_square= 4* r*r;
+    red_area= area_square - area_circle;
+    yellow_area= area_circle;
+    
+    //prompt the areas
+    printf("The Red Area: %.2lf \n", red_area);
+    printf("The Yellow Area: %.2lf",yellow_area);
+    
+    
+
+    return 0;
+}

@@ -1,0 +1,49 @@
+// Assignment 3 Q1
+ /* #include <stdio.h>
+
+int main() {
+   int N,i,sum=0;
+   printf("Enter an integer number: ");
+   scanf("%d",&N);
+   for(i=1;i<=N;++i){
+       if(i%2==0)
+  
+     sum=sum+i;
+   }
+   printf("The sum of even numbers = %d \n",sum);
+
+
+    return 0;
+} 
+*/
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+   int N,i,sum=0,count=0;
+   float average;
+   
+   printf("Enter an integer number N: ");
+   scanf("%d",&N);
+   for(i=1;i<=N;++i){
+       if(i%2==0)
+  
+     {sum=sum+i;
+     count++;
+         
+     }
+   }
+   printf("The sum of even numbers = %d \n",sum);
+   if (count > 0) {
+        average = (float)sum / count; 
+        printf("The average of even numbers is %.2f\n", average);
+    } else {
+        printf("There are no even numbers in the given range.\n");
+    }
+
+    return 0;
+} 

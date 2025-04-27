@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main() {
+    double a,b,c,area,s;
+    printf("Enter a? : ");
+    scanf("%lf",&a);
+    printf("Enter b? : ");
+    scanf("%lf",&b);
+    printf("Enter c? : ");
+    scanf("%lf",&c);
+    
+    if(a > 0 && b > 0 && c > 0 && (a + b > c) && (a + c > b) && (b + c > a)) {
+     
+    s = (a + b + c) / 2;
+    area = sqrt(s * (s - a) * (s - b) * (s - c));
+    printf("Triangle area = %lf\n", area);
+    
+    
+    }else {
+     printf("ERROR: this is not a triangle!");
+    }
+
+
+    return 0;
+}

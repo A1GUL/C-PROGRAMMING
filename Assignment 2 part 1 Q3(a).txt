@@ -1,0 +1,30 @@
+// Assignment 2 part 1 Q3(a)
+#include <stdio.h>
+
+int main() {
+    int num1,num2;
+    char operators;
+    
+    printf("Please enter the first number: ");
+    scanf("%d",&num1);
+    
+    printf("Please enter the second number: ");
+    scanf("%d",&num2);
+    
+    printf("Please choose an operator (+,-,x,/): ");
+    scanf(" %c",&operators);
+     
+    if (operators== '+' )
+      printf("Your result is: %d", num1 + num2);
+      
+    if (operators== '-')
+      printf("Your result is: %d", num1 - num2);
+      
+    if (operators== 'x' )
+      printf("Your result is: %d", num1 * num2);
+      
+    if (operators== '/' )
+      printf("Your result is: %d", num1 / num2);
+      
+    return 0;
+}

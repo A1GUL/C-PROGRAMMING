@@ -1,0 +1,35 @@
+//Assignment 2 part 2 Q3(b)
+#include <stdio.h>
+
+int main() {
+   
+    int num1,num2;
+    char op;
+    
+    printf("enter the first number: ");
+    scanf("%d",&num1);
+    printf("enter the second number: ");
+    scanf("%d",&num2);
+    printf("enter an operator(+,-,x,/): ");
+    scanf(" %c",&op);
+    switch(op){
+        case '+':
+        printf("your result is: %d+%d=%d",num1,num2,num1+num2);
+          break;
+        case '-':
+        printf("your result is: %d-%d=%d",num1,num2,num1-num2);
+          break;
+        case 'x':
+        printf("your result is: %d*%d=%d",num1,num2,num1*num2);
+          break;
+        case '/':
+        printf("your result is: %d/%d=%d",num1,num2,num1/num2);
+          break;
+       default:
+        printf("Error! Operator is not correct.");
+        
+    }
+    
+
+    return 0;
+}
