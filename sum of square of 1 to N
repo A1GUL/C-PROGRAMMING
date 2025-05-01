@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+
+int main() {
+    int N, i = 1, sum = 0;
+
+    printf("Enter an integer N: ");
+    scanf("%d", &N);
+
+    // Do-while döngüsü ile toplamı hesapla
+    do {
+        sum += i * i;  // i'nin karesi
+        i++;  // i'yi bir artır
+    } while (i <= N);  // Koşul
+
+    printf("The sum is: %d\n", sum);
+    return 0;
+}
